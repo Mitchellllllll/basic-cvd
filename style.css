@@ -265,6 +265,45 @@
     margin: 0 auto
   }
 }
+/* ABOUTME */
+.aboutme .aboutme__wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+.aboutme .aboutme__wrapper :nth-child(1){
+  order: 2;
+}
+.aboutme .aboutme__text h1{
+  font-size: 3rem;
+  font-weight:600;
+  color:#ffa700;
+  line-height: 5;
+}
+.aboutme .aboutme__text p {
+  margin-bottom: 3rem;
+  text-align: justify;
+}
+/* MobileView */
+@media screen and (max-width:500px){
+  .aboutme{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .aboutme .aboutme__wrapper {
+    display:grid;
+    grid-template-columns: 1fr;
+  }
+  .aboutme .aboutme__text h1{
+    font-size: 27px;
+    text-align: center;
+  }
+  .aboutme img{
+    width: 20rem;
+    margin:  0 auto;
+  }
+}
 /* REPEATABLE PATTERNS */
 .btn{
   display: inline-block;
